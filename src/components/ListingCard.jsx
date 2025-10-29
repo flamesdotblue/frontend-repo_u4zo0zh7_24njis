@@ -20,7 +20,7 @@ export default function ListingCard({ item }) {
           </span>
           {item.price && (
             <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-gray-900">
-              ${item.price}
+              R{item.price}
             </span>
           )}
         </div>

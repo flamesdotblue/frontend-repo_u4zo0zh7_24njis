@@ -44,26 +44,38 @@ function HeaderBar() {
   );
 }
 
-// Demo seed data for users and items
+// Demo seed data tailored for South African universities and ZAR pricing
 function seedData() {
   const users = [
     {
       id: 'u1',
-      name: 'Maya Patel',
-      university: 'Stanford University',
+      name: 'Thando Mkhize',
+      university: 'University of Cape Town',
       avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400&auto=format&fit=crop',
     },
     {
       id: 'u2',
-      name: 'Liam Johnson',
-      university: 'UCLA',
+      name: 'Kabelo Nkosi',
+      university: 'Wits University',
       avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=400&auto=format&fit=crop',
     },
     {
       id: 'u3',
-      name: 'Sofia Martinez',
-      university: 'NYU',
+      name: 'Anika van der Merwe',
+      university: 'Stellenbosch University',
       avatar: 'https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?q=80&w=400&auto=format&fit=crop',
+    },
+    {
+      id: 'u4',
+      name: 'Lerato Molefe',
+      university: 'University of Pretoria',
+      avatar: 'https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=400&auto=format&fit=crop',
+    },
+    {
+      id: 'u5',
+      name: 'Ayanda Dlamini',
+      university: 'Sol Plaatje University',
+      avatar: 'https://images.unsplash.com/photo-1520975922521-6b19f40bb5a8?q=80&w=400&auto=format&fit=crop',
     },
   ];
 
@@ -71,13 +83,13 @@ function seedData() {
     {
       id: 'i1',
       title: 'Vintage Denim Jacket',
-      description: 'Classic oversized denim with light distressing. Perfect for layering on chilly campus nights.',
+      description: 'Classic oversized denim with light distressing. Perfect for chilly UCT mornings.',
       category: 'Outerwear',
       size: 'M',
       condition: 'Great',
       listingType: 'Sell',
-      price: 35,
-      campus: 'Stanford',
+      price: 350,
+      campus: 'UCT',
       tags: ['#sale', '#vintage', '#denim'],
       images: ['https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?q=80&w=1200&auto=format&fit=crop'],
       likes: 42,
@@ -87,13 +99,13 @@ function seedData() {
     {
       id: 'i2',
       title: 'Purple Hoodie',
-      description: 'Cozy pullover in campus colors. Lightly worn and super soft.',
+      description: 'Cozy pullover in campus colours. Lightly worn and super soft.',
       category: 'Tops',
       size: 'L',
       condition: 'Good',
       listingType: 'Donate',
       price: null,
-      campus: 'UCLA',
+      campus: 'Wits',
       tags: ['#donation', '#hoodie'],
       images: ['https://images.unsplash.com/photo-1520975922521-6b19f40bb5a8?q=80&w=1200&auto=format&fit=crop'],
       likes: 19,
@@ -109,7 +121,7 @@ function seedData() {
       condition: 'Good',
       listingType: 'Swap',
       price: null,
-      campus: 'NYU',
+      campus: 'Maties',
       tags: ['#swap', '#sneakers'],
       images: ['https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1200&auto=format&fit=crop'],
       likes: 31,
@@ -124,13 +136,13 @@ function seedData() {
       size: 'S',
       condition: 'Great',
       listingType: 'Sell',
-      price: 22,
-      campus: 'Stanford',
+      price: 220,
+      campus: 'UP',
       tags: ['#sale', '#corduroy'],
       images: ['https://images.unsplash.com/photo-1539533018447-63fcce2678e3?q=80&w=1200&auto=format&fit=crop'],
       likes: 15,
       comments: 2,
-      user: users[0],
+      user: users[3],
     },
     {
       id: 'i5',
@@ -141,12 +153,12 @@ function seedData() {
       condition: 'Great',
       listingType: 'Donate',
       price: null,
-      campus: 'UCLA',
+      campus: 'SPU',
       tags: ['#donation', '#tote'],
       images: ['https://images.unsplash.com/photo-1547949003-9792a18a2601?q=80&w=1200&auto=format&fit=crop'],
       likes: 9,
       comments: 1,
-      user: users[1],
+      user: users[4],
     },
     {
       id: 'i6',
@@ -156,13 +168,13 @@ function seedData() {
       size: 'XL',
       condition: 'Like New',
       listingType: 'Sell',
-      price: 60,
-      campus: 'NYU',
+      price: 600,
+      campus: 'NWU',
       tags: ['#sale', '#winter'],
       images: ['https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1200&auto=format&fit=crop'],
       likes: 54,
       comments: 10,
-      user: users[2],
+      user: users[0],
     },
   ];
 
